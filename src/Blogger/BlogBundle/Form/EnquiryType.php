@@ -29,3 +29,4 @@ class EnquiryType extends AbstractType
         return 'contact';
     }
 }
+

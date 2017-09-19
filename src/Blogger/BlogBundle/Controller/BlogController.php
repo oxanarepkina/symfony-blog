@@ -18,7 +18,7 @@ class BlogController extends Controller
     /**
      * Show a blog entry
      */
-    public function showAction($id)
+    public function showAction($id, $slug)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -37,3 +37,13 @@ class BlogController extends Controller
         ));
     }
 }
+?>
+
+<div class="lang-container__col">
+    <div class="lang-container__title">
+        Азия
+    </div>
+    <ul class="lang-list">
+        <li class="lang-list__item"><a href="/ru/can/">Россия</a></li>
+    </ul>
+</div>
